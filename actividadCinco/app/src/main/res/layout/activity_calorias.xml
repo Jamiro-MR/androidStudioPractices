@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CaloriasActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido(a)"
+        android:id="@+id/txtNombre"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        android:id="@+id/txtEdad"
+        android:layout_below="@id/txtNombre"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sexo"
+        android:id="@+id/txtSexo"
+        android:layout_below="@id/txtEdad"
+        android:textSize="30dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Peso en Kilogramos"
+        android:layout_below="@id/txtSexo"
+        android:inputType="numberDecimal"
+        android:id="@+id/etPeso"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estatura en centimetros"
+        android:layout_below="@id/etPeso"
+        android:inputType="numberDecimal"
+        android:id="@+id/etEstatura"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado de calorias basales"
+        android:id="@+id/btnCalculo"
+        android:layout_below="@id/etEstatura"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calorias basales"
+        android:id="@+id/txtCalorias"
+        android:layout_below="@id/btnCalculo"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Regresar al menu"
+        android:id="@+id/btnVolver"
+        android:layout_below="@id/txtCalorias"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

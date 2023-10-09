@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mate">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Matematicas"
+        android:textSize="25dp"
+        android:id="@+id/tmate" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál es la suma de 2 + 3?"
+        android:textSize="15dp"
+        android:id="@+id/p1t"
+        android:layout_below="@+id/tmate"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/p1"
+            android:layout_below="@+id/p1t">
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1ac"
+            android:text="5" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1b"
+            android:text="4" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1c"
+            android:text="6" />
+        </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Si tienes 8 manzanas y das 3 a tu amigo, ¿cuántas manzanas te quedan?"
+        android:textSize="15dp"
+        android:id="@+id/p2t"
+        android:layout_below="@+id/p1"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/p2"
+        android:layout_below="@+id/p2t">
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2a"
+            android:text="2" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2bc"
+            android:text="5" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2c"
+            android:text="8" />
+    </RadioGroup>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál es el resultado de 4 multiplicado por 6?"
+        android:textSize="15dp"
+        android:id="@+id/p3t"
+        android:layout_below="@+id/p2"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/p3"
+        android:layout_below="@+id/p3t">
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/p3a"
+            android:text="16" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p3b"
+            android:text="10" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p3cc"
+            android:text="24" />
+    </RadioGroup>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Si tienes un rectángulo con una longitud de 5 cm y una anchura de 3 cm, ¿cuál es su área?"
+        android:textSize="15dp"
+        android:id="@+id/p4t"
+        android:layout_below="@+id/p3"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/p4"
+        android:layout_below="@+id/p4t">
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/p4ac"
+            android:text="15 cm²" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p4b"
+            android:text="8 cm²" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p4c"
+            android:text="6 cm²" />
+    </RadioGroup>
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cali"
+        android:layout_below="@+id/p4"
+        android:text="Calificar"
+        android:textSize="20dp"
+        />
+
+</RelativeLayout>

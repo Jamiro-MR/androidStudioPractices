@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DineroActivity">
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conversor de dinero"
+        android:gravity="center"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/valor"
+        android:layout_below="@id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Ingrese un valor"/>
+
+    <TextView
+        android:id="@+id/moneda1"
+        android:layout_below="@id/valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Moneda: "/>
+
+    <Spinner
+        android:id="@+id/dato1"
+        android:layout_below="@id/moneda1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <TextView
+        android:id="@+id/moneda2"
+        android:layout_below="@id/dato1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Moneda: "/>
+
+    <Spinner
+        android:id="@+id/dato2"
+        android:layout_below="@id/moneda2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_below="@id/dato2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Calcular"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_below="@id/calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Resultado"/>
+
+</RelativeLayout>

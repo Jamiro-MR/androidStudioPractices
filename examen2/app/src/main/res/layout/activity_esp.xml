@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".esp">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Español"
+        android:textSize="25dp"
+        android:id="@+id/tesp" />
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál de las siguientes palabras es un verbo?"
+        android:textSize="15dp"
+        android:id="@+id/p1t"
+        android:layout_below="@+id/tesp"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/p1"
+        android:layout_below="@+id/p1t">
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1ac"
+            android:text="Comer" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1b"
+            android:text="Libro" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p1c"
+            android:text="Casa" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál de las siguientes opciones es un pronombre personal de tercera persona singular?"
+        android:textSize="15dp"
+        android:id="@+id/p2t"
+        android:layout_below="@+id/p1"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/p2"
+        android:layout_below="@+id/p2t">
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2a"
+            android:text="Yo" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2bc"
+            android:text="Él" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p2c"
+            android:text="Tú" />
+    </RadioGroup>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" ¿Cuál de las siguientes palabras es un sinónimo de feliz?"
+        android:textSize="15dp"
+        android:id="@+id/p3t"
+        android:layout_below="@+id/p2"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/p3"
+        android:layout_below="@+id/p3t">
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/p3a"
+            android:text="Triste" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p3b"
+            android:text="Contento" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p3cc"
+            android:text="Enfadado" />
+    </RadioGroup>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Cuál de las siguientes frases está escrita en tiempo presente?"
+        android:textSize="15dp"
+        android:id="@+id/p4t"
+        android:layout_below="@+id/p3"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/p4"
+        android:layout_below="@+id/p4t">
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:id="@+id/p4ac"
+            android:text="Ella lee un libro" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p4b"
+            android:text="Ellos cantarán mañana" />
+        <RadioButton
+            android:textSize="12dp"
+            android:layout_weight="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/p4c"
+            android:text="Él comió una pizza" />
+    </RadioGroup>
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cali"
+        android:layout_below="@+id/p4"
+        android:text="Calificar"
+        android:textSize="20dp"
+        />
+</RelativeLayout>

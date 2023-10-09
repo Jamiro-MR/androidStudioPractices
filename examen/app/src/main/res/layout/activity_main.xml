@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Etapa de vida"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:id="@+id/e"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/n"
+        android:layout_below="@+id/e"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Nombre: "
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre"
+            android:layout_marginRight="20dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frecha de nacimiento"
+        android:id="@+id/fn"
+        android:layout_below="@+id/n"
+        android:textSize="20dp"
+        android:layout_margin="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fn"
+        android:id="@+id/fn2"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="20dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:hint="Dia"
+            android:id="@+id/dia"
+            android:layout_marginLeft="20dp"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            />
+        <EditText
+            android:layout_width="20dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:hint="Mes"
+            android:id="@+id/mes"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            />
+        <EditText
+            android:layout_width="20dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:hint="Año"
+            android:id="@+id/year"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:layout_marginRight="20dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fn2"
+        android:id="@+id/next"
+        android:layout_marginTop="20dp"
+        android:text="Etapa de vida"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+</RelativeLayout>
